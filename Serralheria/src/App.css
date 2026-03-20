@@ -1,0 +1,169 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary: #FF6B35;
+  --secondary: #2C2C2C;
+  --dark: #0D0D0D;
+  --light: #F5F5F5;
+  --metal-light: #D4D4D4;
+  --metal-dark: #B0B0B0;
+  --gradient-metal: linear-gradient(135deg, #B0B0B0 0%, #D4D4D4 100%);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--light);
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--dark);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary);
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+}
+
+.btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--dark);
+}
+
+/* Textura de metal escovado no fundo */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.02) 0px,
+    rgba(255,255,255,0.02) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Animações */
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 107, 53, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 107, 53, 0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes metallic-shift {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,151 @@
+/* Testimonials.css */
+.testimonials {
+  background: var(--secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px 0 30px;
+  position: relative;
+}
+
+.carousel-content {
+  width: 100%;
+  max-width: 800px;
+  min-height: 300px;
+  position: relative;
+}
+
+.testimonial-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+  display: flex;
+  gap: 30px;
+  background: rgba(13, 13, 13, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255, 107, 53, 0.3);
+}
+
+.testimonial-card.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
+.testimonial-photo {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--primary);
+}
+
+.testimonial-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  flex: 1;
+  position: relative;
+}
+
+.quote-icon {
+  color: var(--primary);
+  font-size: 2rem;
+  opacity: 0.3;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.testimonial-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: var(--metal-light);
+  font-style: italic;
+}
+
+.testimonial-text h4 {
+  color: var(--primary);
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.testimonial-text span {
+  color: var(--metal-dark);
+  font-size: 0.9rem;
+}
+
+.carousel-arrow {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+}
+
+.carousel-arrow:hover {
+  background: var(--primary);
+  color: var(--dark);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--metal-dark);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  background: var(--primary);
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .testimonial-photo {
+    width: 80px;
+    height: 80px;
+  }
+  .carousel-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}

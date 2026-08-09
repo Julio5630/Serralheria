@@ -4,22 +4,22 @@ import { FaPhone, FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 
 const Contact = () => {
   // Número do WhatsApp no formato internacional (55 + DDD + número)
-  const whatsappNumber = "556192708329";
-  const mensagem = "Olá Vanderley, gostaria de solicitar um orçamento.";
+  const whatsappNumber = "5500000000000";
+  const mensagem = "Olá, gostaria de solicitar um orçamento.";
   const mensagemCodificada = encodeURIComponent(mensagem);
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${mensagemCodificada}`;
 
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2 className="section-title" data-aos="fade-right">Fale com Vanderley</h2>
+        <h2 className="section-title" data-aos="fade-right">Fale com nossa equipe</h2>
         <div className="contact-content">
           {/* Coluna esquerda: Botão do WhatsApp e diferenciais */}
           <div className="contact-whatsapp" data-aos="fade-right">
             <div className="whatsapp-card">
               <FaWhatsapp className="whatsapp-icon" />
               <h3>Atendimento rápido e direto</h3>
-              <p>Clique no botão abaixo para conversar com Vanderley no WhatsApp e solicitar seu orçamento.</p>
+              <p>Clique no botão abaixo para conversar com nossa equipe e solicitar seu orçamento.</p>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
                 <FaWhatsapp /> Chamar no WhatsApp
               </a>
@@ -27,7 +27,7 @@ const Contact = () => {
 
             {/* Diferenciais rápidos */}
             <div className="quick-differentials">
-              <h4>Por que falar com Vanderley?</h4>
+              <h4>Por que escolher a Serralheria Horizonte?</h4>
               <ul>
                 <li>✓ Preço justo e combinado direto</li>
                 <li>✓ Entrega rápida </li>
@@ -45,7 +45,7 @@ const Contact = () => {
                 <h4>WhatsApp</h4>
                 <p>
                   <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                    (61) 9270-8329
+                    (00) 00000-0000
                   </a>
                   
                 </p>
@@ -56,7 +56,7 @@ const Contact = () => {
               <FaPhone className="info-icon" />
               <div>
                 <h4>Telefone</h4>
-                <p>(61) 99807-9657</p>
+                <p>(00) 00000-0000</p>
               </div>
             </div>
 
@@ -64,7 +64,7 @@ const Contact = () => {
               <FaEnvelope className="info-icon" />
               <div>
                 <h4>E-mail</h4>
-                <p>vanderley.serralheiro@email.com</p>
+                <p>contato@exemplo.com</p>
               </div>
             </div>
 

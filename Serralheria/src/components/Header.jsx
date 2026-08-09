@@ -27,7 +27,7 @@ const Header = () => {
                 <div className="logo">
                     <a href="#hero">
                         <span className="logo-icon">⏊</span>
-                        <span className="logo-text">Vanderley Serralheiro</span>
+                        <span className="logo-text">Serralheria Horizonte</span>
                     </a>
                 </div>
 
@@ -39,7 +39,7 @@ const Header = () => {
                         <li><a href="#contact" onClick={closeMenu}>Contato</a></li>
                         <li>
                             <a
-                                href="https://wa.me/556192708329?text=Ol%C3%A1%20Vanderley%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+                                href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn btn-outline btn-small"

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-logo">
             <span className="logo-icon">⏊</span>
-            <span className="logo-text">Vanderley Serralheiro</span>
+            <span className="logo-text">Serralheria Horizonte</span>
           </div>
           <div className="footer-links">
             <h4>Links Rápidos</h4>
@@ -26,37 +26,20 @@ const Footer = () => {
             <div className="social-icons">
               <a href="#" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
               <a href="#" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-              <a href="https://wa.me/5561998079657" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+              <a href="#contact" aria-label="Ir para contato"><FaWhatsapp /></a>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2026 Vanderley Serralheiro - Todos os direitos reservados.</p>
+          <p>&copy; 2026 Serralheria Horizonte - Todos os direitos reservados.</p>
           <p className="developer">Atendimento em todo o Distrito Federal</p>
 
           {/* NOVA LINHA: Informações do desenvolvedor */}
           <div className="developer-info">
             <FaCode className="dev-icon" />
             <span>
-              Desenvolvido por <strong>Júlio DEV</strong> •{' '}
-              <strong>
-                <a
-                  href="https://wa.me/5561998079657?text=Ol%C3%A1%20Júlio%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: 'inherit', textDecoration: 'none' }}
-                >
-                  (61) 99807-9657
-                </a>
-              </strong>{' '}
-              <a
-                href="https://wa.me/5561998079657?text=Ol%C3%A1%20Júlio%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaWhatsapp />
-              </a>
+              Desenvolvido por <strong>Júlio César</strong>
             </span>
           </div>
         </div>

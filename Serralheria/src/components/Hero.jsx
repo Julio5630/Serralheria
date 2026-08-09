@@ -72,7 +72,7 @@ const Hero = () => {
                 </p>
                 <div ref={ctaRef} className="hero-cta">
                     <a
-                        href="https://wa.me/556192708329?text=Ol%C3%A1%20Vanderley%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+                        href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-primary btn-large pulse-border"

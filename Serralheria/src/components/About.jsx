@@ -19,7 +19,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="container">
-        <h2 className="section-title" data-aos="fade-right">Sobre Vanderley</h2>
+        <h2 className="section-title" data-aos="fade-right">Sobre a Serralheria Horizonte</h2>
         <div className="about-content">
           <div className="about-video" data-aos="fade-right">
             <video
@@ -36,7 +36,7 @@ const About = () => {
           <div className="about-text" data-aos="fade-left">
             <h3>Experiência e confiança em cada solda</h3>
             <p>
-              Meu nome é Vanderley, serralheiro autônomo com mais de 15 anos de estrada. 
+              Somos uma serralheria especializada em soluções metálicas sob medida, com mais de 15 anos de experiência. 
               Comecei ajudando meu pai na oficina e desde então nunca parei de trabalhar 
               com metal. Hoje, atendo clientes em todo o Distrito Federal, sempre com 
               o compromisso de entregar um serviço bem feito, no prazo combinado e com 
